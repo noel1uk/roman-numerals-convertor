@@ -13,7 +13,7 @@ describe('Romanizer', function() {
   });
   describe('.categorize', function() {
     it('when given 3 it returns the string `first`', function() {
-
+      expect(romanize.categorize(3)).toEqual('first')
     });
   });
 });
