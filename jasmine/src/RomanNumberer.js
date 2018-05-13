@@ -14,8 +14,12 @@ class RomanNumberer {
       case 'second':
         answer += 'IV';
       break;
-      default:
+      case 'third':
         answer += 'V';
+        for ( let i = 5; i < number; i++ ) {
+          answer += 'I';
+        }
+      default:
     }
     return answer;
   }
