@@ -22,8 +22,10 @@ class RomanNumberer {
   categorize(number) {
     if ( number < 4) {
       return 'first';
-    } else if ( number === 4 ){
+    } else if ( number === 4 ) {
       return 'second';
-    } 
+    } else if ( number < 9 ) {
+      return 'third';
+    }
   }
 }
