@@ -18,5 +18,8 @@ describe('Romanizer', function() {
     it('when given 3 it returns the string `first`', function() {
       expect(romanize.categorize(3)).toEqual('first');
     });
+    it('when given 4 it returns the string `second`', function() {
+      expect(romanize.categorize(4)).toEqual('second');
+    });
   });
 });
