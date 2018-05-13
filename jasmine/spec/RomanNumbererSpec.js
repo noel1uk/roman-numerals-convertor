@@ -16,6 +16,9 @@ describe('Romanizer', function() {
     it('returns VIII when given 8', function() {
       expect(romanize.convert(8)).toEqual('VIII');
     });
+    it('returns IX when given 9', function() {
+      expect(romanize.convert(9)).toEqual('IX');
+    });
   });
   describe('.categorize', function() {
     it('when given 3 it returns the string `first`', function() {
