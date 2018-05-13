@@ -11,7 +11,7 @@ describe('Romanizer', function() {
       expect(romanize.convert(4)).toEqual('IV');
     });
     it ('returns 5 when given 5', function() {
-      expect(romanize.convert(5)).toEqual(V);
+      expect(romanize.convert(5)).toEqual('V');
     });
   });
   describe('.categorize', function() {
