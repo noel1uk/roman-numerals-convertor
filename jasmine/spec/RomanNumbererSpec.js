@@ -21,5 +21,8 @@ describe('Romanizer', function() {
     it('when given 4 it returns the string `second`', function() {
       expect(romanize.categorize(4)).toEqual('second');
     });
+    it('returns `third` when given 5', function() {
+      expect(romanize.categorize(5)).toEqual('third');
+    });
   });
 });
