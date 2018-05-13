@@ -19,10 +19,15 @@ class RomanNumberer {
         for ( let i = 5; i < number; i++ ) {
           answer += 'I';
         }
+      break;
+      case 'fourth':
+        answer += 'IX';
+      break;
       default:
     }
     return answer;
   }
+
   categorize(number) {
     if ( number < 4) {
       return 'first';
@@ -30,6 +35,8 @@ class RomanNumberer {
       return 'second';
     } else if ( number < 9 ) {
       return 'third';
+    } else if ( number === 9 ) {
+      return 'fourth';
     }
   }
 }
