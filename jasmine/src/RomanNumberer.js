@@ -11,14 +11,19 @@ class RomanNumberer {
           answer += 'I';
         }
       break;
-      default:
+      case 'second':
         answer += 'IV';
+      break;
+      default:
+        answer += 'V';
     }
     return answer;
   }
   categorize(number) {
     if ( number < 4) {
       return 'first';
-    }
+    } else if ( number === 4 ){
+      return 'second';
+    } 
   }
 }
