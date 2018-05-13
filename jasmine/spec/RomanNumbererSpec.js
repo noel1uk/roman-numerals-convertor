@@ -10,8 +10,11 @@ describe('Romanizer', function() {
     it('returns IV when given 4', function() {
       expect(romanize.convert(4)).toEqual('IV');
     });
-    it ('returns 5 when given 5', function() {
+    it('returns V when given 5', function() {
       expect(romanize.convert(5)).toEqual('V');
+    });
+    it('returns VIII when given 8', function() {
+      expect(romanize.convert(8)).toEqual('VIII');
     });
   });
   describe('.categorize', function() {
